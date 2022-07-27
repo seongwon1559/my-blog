@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY BLOG</title>
+    <link rel="stylesheet" href="stle.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title"> BLOG</h1>
+          <h2 class="master-description">yong moon</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-right">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">my profile</span>
+                <ul class="inner-menu">
+                
+                  <li class="inner-menu-item">
+                    <a href="playlist.html">성원</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Interest</span>
+                <ul class="inner-menu">
+                
+                  <li class="inner-menu-item">
+                    <a href="oott.html">취미</a>
+                  </li>
+                </ul>
+                
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Best</span>
+                <ul class="inner-menu">
+                
+                  <li class="inner-menu-item">
+                    <a href="music.html">악기</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title">저는 악기다루는거 좋아합니다</h1>
+            </div>
+            <div class="article-body">
+              <img src="data:image/jpeg;base64,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" />
+              <p>기타치는거 되게 좋아해요</p>
+              <p>4년정도 친거같아요
+
+              </p>
+              <p>
+               드럼 배우고싶어요
+               노래도 잘하고 싶어요
+              </p>
+             <a href="index.html">[홈]</a>
+            </div>
+          </article>
+        </section>
+       
+      </div>
+      <footer id="main-footer">
+        <a href="https://github.com/woonsango">Created By 서성원</a>
+      </footer>
+    </div>
+  </body>
+</html>

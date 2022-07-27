@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY BLOG</title>
+    <link rel="stylesheet" href="stle.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title"> BLOG</h1>
+          <h2 class="master-description">yong moon</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-right">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">my profile</span>
+                <ul class="inner-menu">
+                
+                  <li class="inner-menu-item">
+                    <a href="playlist.html">성원</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Interest</span>
+                <ul class="inner-menu">
+                
+                  <li class="inner-menu-item">
+                    <a href="oott.html">취미</a>
+                  </li>
+                </ul>
+                
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Best</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title"></h1>
+            </div>
+            <div class="article-body">
+              <img src="https://cdn.crowdpic.net/detail-thumb/thumb_d_12DA88FC4589A289875315B852E563CB.jpg" />
+             
+              <p>한식,양식,중식,일식 다 좋아해요. 그중 곱창, 청국장, 짬뽕 되게 좋아해요
+                인스타 프로필사진도 짬뽕이에요
+              </p>
+             
+             <a href="index.html">[홈]</a>
+            </div>
+          </article>
+        </section>
+       
+      </div>
+      <footer id="main-footer">
+        <a href="https://github.com/woonsango">Created By 서성원</a>
+      </footer>
+    </div>
+  </body>
+</html>

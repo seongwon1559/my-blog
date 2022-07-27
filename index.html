@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY BLOG</title>
+    <link rel="stylesheet" href="stle.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title"> BLOG</h1>
+          <h2 class="master-description">yong moon</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-right">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">my profile</span>
+                <ul class="inner-menu">
+                
+                  <li class="inner-menu-item">
+                    <a href="playlist.html">성원</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Interest</span>
+                <ul class="inner-menu">
+                
+                  <li class="inner-menu-item">
+                    <a href="oott.html">취미</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Best</span>
+                <ul class="inner-menu">
+                
+                  <li class="inner-menu-item">
+                    <a href="music.html">악기</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title">저는 서성원입니다.</h1>
+            </div>
+            <div class="article-body">
+              <img src="http://th4.tmon.kr/thumbs/image/e90/922/582/c30fa8436_700x700_95_FIT.jpg" />
+              <p>안녕하세요, 저는 용문고등학교에 재학중인 서성원입니다.</p>
+              <p>저는 17살입니다.</p>
+              <p>seongwonseo53@gmail.com 이메일입니다.
+                mbti몰라요
+                sns 인스타 해요
+                 웹툰 좋아해요
+              </p>
+              <p>곱창먹고싶다.</p> 
+            </div>
+          </article>
+        </section>
+        <aside id="main-aside">
+          <div class="aside-list">
+            <h3>음식</h3>
+            <ul>
+              <li><a href="eat.html">데이터</a></li>
+             
+            </ul>
+          </div>
+          
+        </aside>
+      </div>
+      <footer id="main-footer">
+        <a href="https://github.com/woonsango">Created By 서성원</a>
+      </footer>
+    </div>
+  </body>
+</html>
